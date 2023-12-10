@@ -2,6 +2,10 @@
 
 ## master
 
+## 3.2.0.a2
+
+* Fix for free-busy `fbtype` statuses
+
 ## 3.2.0.a1
 
 * Added free-busy report
