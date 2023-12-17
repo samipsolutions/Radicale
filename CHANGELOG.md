@@ -4,6 +4,7 @@
 
 ## 3.2.0.a3
 
+* Added some logging to see which auth backend is being used.
 * Added support for custom header auth, eg for Authentik compatibility.
 
 ## 3.2.0.a2
