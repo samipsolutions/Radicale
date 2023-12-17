@@ -30,7 +30,7 @@ Take a look at the class ``BaseAuth`` if you want to implement your own.
 
 from typing import Sequence, Tuple, Union
 
-from radicale import config, types, utils, logger
+from radicale import config, types, utils
 
 INTERNAL_TYPES: Sequence[str] = ("none", "remote_user", "http_x_remote_user", "custom_http_remote_user",
                                  "htpasswd")
@@ -38,8 +38,6 @@ INTERNAL_TYPES: Sequence[str] = ("none", "remote_user", "http_x_remote_user", "c
 
 def load(configuration: "config.Configuration") -> "BaseAuth":
     """Load the authentication module chosen in configuration."""
-    auth_type = configuration.get("auth", "type")
-    logger.info(f"Loading authentication backend: {auth_type}")
     return utils.load_plugin(INTERNAL_TYPES, "auth", "Auth", BaseAuth,
                              configuration)
 

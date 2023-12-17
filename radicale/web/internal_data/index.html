@@ -6,28 +6,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Radicale Web Interface</title>
     <link href="css/main.css" type="text/css" media="screen" rel="stylesheet">
-    <link href="css/icon.png" type="image/png" rel="icon">
+    <link href="icons/icon.png" type="image/png" rel="icon">
     <style>.hidden {display: none !important;}</style>
     <script src="fn.js"></script>
   </head>
-  
+
   <body>
     <nav id="logoutview" class="hidden">
       <span data-name="user" style="word-wrap:break-word;"></span>
       <a href="" class="red" data-name="link" title="Logout">Logout</a>
     </nav>
-	
+
     <main>
       <section id="loadingscene">
-        <img src="css/loading.svg" alt="Loading">
+        <img src="icons/loading.svg" alt="Loading">
         <h2>Loading</h2>
         <p>Please wait...</p>
         <noscript>JavaScript is required</noscript>
       </section>
-	  
+
       <section id="loginscene" class="container hidden">
         <div class="logocontainer">
-          <img src="css/logo.svg" alt="Radicale">
+          <img src="icons/logo.svg" alt="Radicale">
         </div>
         <h1>Sign in</h1>
         <br>
@@ -38,14 +38,14 @@
           <span class="error" data-name="error"></span>
         </form>
       </section>
-	  
+
       <section id="collectionsscene" class="hidden">
         <div class="fabcontainer">
           <a href="" class="green" data-name="new" title="Create a new addressbook or calendar">
-            <img src="css/icons/new.svg" class="icon" alt="➕">
+            <img src="icons/new.svg" class="icon" alt="➕">
           </a>
           <a href="" class="blue" data-name="upload" title="Upload an addressbook or calendar">
-            <img src="css/icons/upload.svg" class="icon" alt="⬆️">
+            <img src="icons/upload.svg" class="icon" alt="⬆️">
           </a>
         </div>
         <article data-name="collectiontemplate" class="hidden">
@@ -66,23 +66,23 @@
           <ul>
             <li>
               <a href="" title="Download" class="green" data-name="download">
-                <img src="css/icons/download.svg" class="icon" alt="🔗">
+                <img src="icons/download.svg" class="icon" alt="🔗">
               </a>
             </li>
             <li>
               <a href="" title="Edit" class="blue" data-name="edit">
-                <img src="css/icons/edit.svg" class="icon" alt="✏️">
+                <img src="icons/edit.svg" class="icon" alt="✏️">
               </a>
             </li>
             <li>
               <a href="" title="Delete" class="red" data-name="delete">
-                <img src="css/icons/delete.svg" class="icon" alt="❌">
+                <img src="icons/delete.svg" class="icon" alt="❌">
               </a>
             </li>
           </ul>
         </article>
       </section>
-	  
+
       <section id="editcollectionscene" class="container hidden">
         <h1>Edit Collection</h1>
         <p>Editing collection <span class="title" data-name="title">title</span>
@@ -111,7 +111,7 @@
           <button type="button" class="red" data-name="cancel">Cancel</button>
         </form>
       </section>
-	  
+
       <section id="createcollectionscene" class="container hidden">
         <h1>Create a new Collection</h1>
         <p>Enter the details of your new collection.</p>
@@ -139,13 +139,13 @@
           <button type="button" class="red" data-name="cancel">Cancel</button>
         </form>
       </section>
-	  
+
       <section id="uploadcollectionscene" class="container hidden">
         <h1>Upload Collection</h1>
         <ul>
           <li data-name="filetemplate" class="hidden"> Uploading <span data-name="name">name</span>
             <br>
-            <img data-name="pending" src="css/loading.svg" alt="Please wait...">
+            <img data-name="pending" src="icons/loading.svg" alt="Please wait...">
             <span class="successmessage" data-name="success">Uploaded Successfully!</span>
             <span class="error" data-name="error"></span>
           </li>
@@ -154,7 +154,7 @@
           <button type="button" class="red" data-name="close">Close</button>
         </form>
       </section>
-	  
+
       <section id="deletecollectionscene" class="container hidden">
         <h1>Delete Collection</h1>
         <p>Do you want to delete the collection <span class="title" data-name="title">title</span>? </p>
@@ -166,7 +166,7 @@
         <span class="error hidden" data-name="error"></span>
         <br>
       </section>
-	  
+
     </main>
   </body>
 </html>
