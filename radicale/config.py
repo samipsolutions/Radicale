@@ -162,6 +162,10 @@ DEFAULT_CONFIG_SCHEMA: types.CONFIG_SCHEMA = OrderedDict([
             "help": "authentication method",
             "type": str_or_callable,
             "internal": auth.INTERNAL_TYPES}),
+        ("remote_user_header", {
+            "value": "HTTP_X_REMOTE_USER",
+            "help": "Header name for extracting the remote user",
+            "type": str}),
         ("htpasswd_filename", {
             "value": "/etc/radicale/users",
             "help": "htpasswd filename",

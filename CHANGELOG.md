@@ -2,6 +2,10 @@
 
 ## master
 
+## 3.2.0.a3
+
+* Added support for custom header auth, eg for Authentik compatibility.
+
 ## 3.2.0.a2
 
 * Fix for free-busy `fbtype` statuses
